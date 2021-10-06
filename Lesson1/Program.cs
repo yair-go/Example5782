@@ -6,7 +6,14 @@ namespace Lesson1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello C#!");
+
+            Console.Write("Enter a: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Enter b: ");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine($"The result is: {a + b}");
+
         }
     }
 }
