@@ -12,7 +12,7 @@ namespace Lesson1
             int a = int.Parse(Console.ReadLine());
             Console.Write("Enter b: ");
             int b = int.Parse(Console.ReadLine());
-            Console.WriteLine($"The result is: {a + b}");
+            Console.WriteLine($@"The expression ""a+b"" result: {a + b}");
 
         }
     }
