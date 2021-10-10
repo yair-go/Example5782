@@ -6,7 +6,10 @@ namespace Lesson2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Student st = new Student(1);
+            st.Name = "Shem";
+            int id = st.Id;
+            Console.WriteLine(st);
         }
     }
 }
