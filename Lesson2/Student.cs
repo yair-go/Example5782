@@ -18,6 +18,7 @@ namespace Lesson2
         }
 
         public int Grade { get => grade; set => grade = value; }
+        public DateTime RegDate { get; set; }
 
         public override string ToString()
         {
