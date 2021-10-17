@@ -34,7 +34,8 @@ namespace Lesson3
 
             IDAL.DO.DataSource.courses[0]= course;
 
-
+            Random random = new Random();
+            IDAL.DO.Degree degree = (IDAL.DO.Degree)random.Next(3);
 
             InitializeComponent();
         }
