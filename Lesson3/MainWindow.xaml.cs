@@ -48,6 +48,7 @@ namespace Lesson3
         {
             //st.Name = tb_Console.Text;
             int grade;
+
             int.TryParse(tb_Console.Text, out grade);
             st.Grade = grade;
         }

@@ -9,7 +9,9 @@ namespace Lesson1
             Console.WriteLine("Hello C#!");
 
             Console.Write("Enter a: ");
-            int a = int.Parse(Console.ReadLine());
+            int a;
+            //a = int.Parse(Console.ReadLine());
+            bool s = int.TryParse(Console.ReadLine(), out a);
             Console.Write("Enter b: ");
             int b = int.Parse(Console.ReadLine());
             Console.WriteLine($@"The expression ""a+b"" result: {a + b}");
