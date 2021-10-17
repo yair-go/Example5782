@@ -13,6 +13,17 @@ namespace Lesson2
             Student[] students = new Student[10];
             st.RegDate = DateTime.Now;
 
+            Random rand = new Random();
+            for (int i = 0; i < students.Length; i++)
+            {
+                students[i].Grade = rand.Next(55, 100);
+            }
+
+            foreach (Student student in students)
+            {
+                student.RegDate = DateTime.Now;
+            }
+
             Course course = new Course() { Id = 153007, Name = "C#" };
             course.Name = "dotnet";
             Console.WriteLine(course);

@@ -8,8 +8,11 @@ namespace Lesson2
 {
     public struct Course
     {
+        #region Properties
         public int Id { get; init; }
         public String Name { get; set; }
+
+        #endregion
 
         public override string ToString()
         {

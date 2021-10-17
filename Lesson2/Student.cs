@@ -7,7 +7,7 @@ using Lesson1;
 
 namespace Lesson2
 {
-    class Student : Person
+    public class Student : Person
     {
         private int grade;
 

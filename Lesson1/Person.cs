@@ -8,6 +8,7 @@ namespace Lesson1
 {
     public class Person
     {
+
         private int id;
         
         public Person(int id)
@@ -15,8 +16,11 @@ namespace Lesson1
             this.id = id;
         }
 
+        #region Properties
         public int Id { get =>  id; }
         public string Name { get ; set; }
+
+        #endregion
 
         public override string ToString()
         {
