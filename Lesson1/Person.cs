@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson1
 {
-    public class Person
+    public class Person : IComparable<Person>
     {
 
         private int id;
@@ -22,9 +22,16 @@ namespace Lesson1
 
         #endregion
 
+        public int CompareTo(Person? other)
+        {
+            return Name.CompareTo(other.Name);
+        }
+
         public override string ToString()
         {
             return $"ID: {id}, Name: {Name}";
         }
+
+       
     }
 }

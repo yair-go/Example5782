@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Lesson2
 {
@@ -27,6 +28,10 @@ namespace Lesson2
             Course course = new Course() { Id = 153007, Name = "C#" };
             course.Name = "dotnet";
             Console.WriteLine(course);
+
+            List<Student> studentsList = new List<Student>();
+            studentsList.Add(new Student(2));
+            studentsList[0].Grade = 100;
         }
     }
 }
