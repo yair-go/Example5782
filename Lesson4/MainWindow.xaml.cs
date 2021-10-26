@@ -27,7 +27,7 @@ namespace Lesson4
 
         private void pbConsole_Click(object sender, RoutedEventArgs e)
         {
-            tbConsole.Text = "Hello WPF";
+            tbConsole.Text = "Hello " + tbConsole.Text;
         }
     }
 }
