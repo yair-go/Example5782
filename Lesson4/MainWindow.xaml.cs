@@ -27,7 +27,19 @@ namespace Lesson4
 
         private void pbConsole_Click(object sender, RoutedEventArgs e)
         {
-            tbConsole.Text = "Hello " + tbConsole.Text;
+            try
+            {
+                if (tbConsole.Text.Contains("Hello"))
+                {;
+                    throw new WrongInputExpetion("Should not contain HELLO");
+                }
+                tbConsole.Text = "Hello " + tbConsole.Text;
+            }
+            catch (Exception ex)
+            {
+                tbConsole.Text = ex.Message;
+            }
+           
         }
     }
 }

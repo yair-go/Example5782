@@ -16,6 +16,8 @@ namespace Lesson2
 
         }
 
+        IEnumerable<Course> Courses { get; set; }
+
         public int Grade { get => grade; set => grade = value; }
         public DateTime RegDate { get; set; }
 
