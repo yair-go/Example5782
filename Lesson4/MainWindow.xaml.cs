@@ -38,6 +38,7 @@ namespace Lesson4
             catch (Exception ex)
             {
                 tbConsole.Text = ex.Message;
+                throw new ApplicationException("oops", ex);
             }
            
         }
