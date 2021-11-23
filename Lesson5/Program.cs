@@ -10,7 +10,12 @@ namespace Lesson5
         static void Main(string[] args)
         {
             List<Student> students = new List<Student>();
-         
+            double ave = students.Average(student => student.Grade);
+            foreach (var student in students)
+            {
+
+            }
+        
         }
     }
 }

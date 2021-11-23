@@ -9,6 +9,11 @@ namespace DalObject
 {
     public partial class DalObject : IDal
     {
+        public void AddStudent(object degree)
+        {
+            throw new NotImplementedException();
+        }
+
         public  IEnumerable<int> GetAllParcelsIDS()
         {
             throw new NotImplementedException();

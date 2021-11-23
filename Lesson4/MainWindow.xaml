@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lesson4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="First WPF" Height="450" Width="800">
+    <Grid Background="#FF347FC4">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="689*"/>
-            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="700*"/>
+            <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
         <TextBox x:Name="tbConsole" Text="What yours name?" TextWrapping="Wrap" Margin="187,106,256,185"/>
-        <Button x:Name="pbConsole" Content="Hello" HorizontalAlignment="Left" Margin="513,229,0,0" VerticalAlignment="Top" Click="pbConsole_Click" Background="#7F63B45F"/>
+        <Button x:Name="pbConsole"  HorizontalAlignment="Left" Margin="513,229,0,0" VerticalAlignment="Top" Click="pbConsole_Click" Background="#7D6B91" MouseEnter="pbConsole_MouseEnter">Hello</Button>
 
     </Grid>
 </Window>

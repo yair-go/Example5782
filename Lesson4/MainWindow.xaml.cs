@@ -23,6 +23,18 @@ namespace Lesson4
         public MainWindow()
         {
             InitializeComponent();
+            pbConsole.Click += new System.Windows.RoutedEventHandler(changeContent);
+           // pbConsole.Click += (pbConsole, new RoutedEventArgs()) => pbConsole.Background = new Brush();
+        }
+
+        private void PbConsole_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void changeContent(object sender, RoutedEventArgs e)
+        {
+            pbConsole.Content = "Wow";
         }
 
         private void pbConsole_Click(object sender, RoutedEventArgs e)
@@ -41,6 +53,21 @@ namespace Lesson4
                 throw new ApplicationException("oops", ex);
             }
            
+        }
+
+        private void pbConsole_MouseEnter(object sender, MouseEventArgs e)
+        {
+            // pbConsole.Height *= 2;
+            // pbConsole.Width *= 2;
+            MessageBox.Show("מי הרשה ללחוץ על הכפתור הזה?",
+                      "אזהרה חשובה",
+                      MessageBoxButton.OK,
+                      MessageBoxImage.Hand,
+                      MessageBoxResult.Cancel,
+                      MessageBoxOptions.RtlReading);
+            this.Hide();
+            new StudentWindow().ShowDialog();
+            this.Show();
         }
     }
 }

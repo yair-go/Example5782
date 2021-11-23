@@ -8,7 +8,8 @@ namespace IDAL
 {
     public interface IDal
     {
-        IEnumerable<int> GetAllParcelsIDS();
+        IEnumerable<int> GetAllParcelsIDS(Func<IDAL.DO.Parcel,bool> p = null);
         void AddDrone();
+        void AddStudent(object degree);
     }
 }
